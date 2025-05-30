@@ -1,0 +1,144 @@
+/* style.css */
+/* ===== General Styles ===== */
+img:is([sizes="auto" i], [sizes^="auto," i]) {
+  contain-intrinsic-size: 3000px 1500px;
+}
+
+img.wp-smiley, img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 0.07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
+/* WordPress Block Styles */
+.wp-block-button__link {
+  color: #fff;
+  background-color: #32373c;
+  border-radius: 9999px;
+  box-shadow: none;
+  text-decoration: none;
+  padding: calc(.667em + 2px) calc(1.333em + 2px);
+  font-size: 1.125em;
+}
+
+.wp-block-file__button {
+  background: #32373c;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Root Variables */
+:root {
+  --wp--preset--aspect-ratio--square: 1;
+  --wp--preset--aspect-ratio--4-3: 4/3;
+  /* ... (giữ nguyên tất cả các biến --wp--preset--... từ file gốc) */
+  --primary: #d96c2c;
+  --heading: #000000;
+  --text: #737373;
+  --light: #E0E0E0;
+  --primary-font: 'Space Grotesk';
+  --font-size: 16px;
+  --line-height: 1.86em;
+  --letter-spacing: 0px;
+  --secondary-font: 'Space Grotesk';
+  --width-sidebar: 370px;
+  --main-content: calc(100% - 370px);
+  --container-width: 1190px;
+  --boxed-offset: 20px;
+  --woo-layout: layout_1c;
+  --woo-width-sidebar: 320px;
+  --woo-main-content: calc(100% - 320px);
+}
+
+/* Layout Styles */
+:where(.is-layout-flex) {
+  gap: 0.5em;
+}
+
+:where(.is-layout-grid) {
+  gap: 0.5em;
+}
+
+body .is-layout-flex {
+  display: flex;
+}
+
+.is-layout-flex {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.is-layout-flex > :is(*, div) {
+  margin: 0;
+}
+
+/* ... (tiếp tục các quy tắc layout khác từ file gốc) */
+
+/* Event Styles */
+#sidebar-event .widget_feature_event .event-feature .item .date-event .date,
+.single_event .content-event .tab-Location ul.event_nav li.event_nav-item.active:after,
+.single_event .content-event .tab-Location ul.event_nav li.event_nav-item a:after,
+.single_event .content-event .event-related .archive_event .ovaev-content.content-grid .date-event .date,
+#sidebar-event .widget ul li a:hover:before,
+.type1 .desc .event_post .button_event .view_detail:hover,
+.type2 .desc .event_post .button_event .view_detail:hover,
+#sidebar-event .widget_feature_event .event-feature .item .desc .event_post .button_event .view_detail:hover,
+#sidebar-event .widget_list_event .button-all-event a:hover,
+.single_event .content-event .event_intro .wrap-event-info .wrap-booking-links a:hover,
+.single_event .content-event .ova-next-pre-post .pre:hover .num-1 .icon,
+.single_event .content-event .ova-next-pre-post .next:hover .num-1 .icon,
+.single_event .content-event .event-related .archive_event .ovaev-content.content-grid .desc .event_post .button_event .view_detail:hover,
+.ovaev-event-element.ovaev-event-slide .owl-nav button:hover,
+.ovapo_project_slide .grid .owl-nav button:hover,
+.search_archive_event form .wrap-ovaev_submit .ovaev_submit,
+.ovaev-event-element.version_2 .wp-content .ovaev-content.content-grid .date-event .date,
+.ovaev-event-element.version_2 .wp-content .ovaev-content.content-grid .desc .event_post .button_event .view_detail:hover,
+.blog_pagination .pagination li.active a,
+.blog_pagination .pagination li a:hover,
+.blog_pagination .pagination li a:focus,
+.ovaev-event-element.ovaev-event-slide .owl-dots .owl-dot.active span,
+.ovapo_project_grid .btn_grid .btn_grid_event:hover,
+.events_pagination .page-numbers li span,
+.events_pagination .page-numbers li a:hover,
+.ovaev-wrapper-search-ajax .search-ajax-pagination ul li .page-numbers.current,
+.ovaev-wrapper-search-ajax .search-ajax-pagination ul li .page-numbers:hover {
+  background-color: #d96c2c;
+}
+
+/* ... (tiếp tục tất cả các quy tắc CSS từ file gốc) */
+
+/* Elementor Kit Styles */
+.elementor-kit-6 {
+  --e-global-color-primary: #6EC1E4;
+  --e-global-color-secondary: #54595F;
+  --e-global-color-text: #7A7A7A;
+  --e-global-color-accent: #61CE70;
+  --e-global-typography-primary-font-family: "Roboto";
+  --e-global-typography-primary-font-weight: 600;
+  --e-global-typography-secondary-font-family: "Roboto Slab";
+  --e-global-typography-secondary-font-weight: 400;
+  --e-global-typography-text-font-family: "Roboto";
+  --e-global-typography-text-font-weight: 400;
+  --e-global-typography-accent-font-family: "Roboto";
+  --e-global-typography-accent-font-weight: 500;
+}
+
+/* ... (tiếp tục tất cả các quy tắc Elementor từ file gốc) */
+
+/* Media Queries */
+@media (min-width: 1024px) and (max-width: 1250px) {
+  body .row_site,
+  body .elementor-section.elementor-section-boxed>.elementor-container {
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* ... (tiếp tục tất cả media queries từ file gốc) */
